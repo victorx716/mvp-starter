@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-mongoose.connect(process.env.MONGOLAB_URI);
+mongoose.connect(process.env.MONGOLAB_URI, { useMongoClient: true });
 var db = mongoose.connection;
 
 db.on('error', function() {
