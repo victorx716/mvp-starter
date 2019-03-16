@@ -1,4 +1,4 @@
-# Project Name #
+# Tokenize #
 
 <!-- 
 > This material was originally posted [here](http://www.quora.com/What-is-Amazons-approach-to-product-development-and-product-management). It is reproduced here for posterities sake.
@@ -17,28 +17,20 @@ Once the project moves into development, the press release can be used as a touc
  -->
  
 ## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
-
+  Tokenize
 ## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
-
+  Manage your digital assets.
 ## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
-
+  Tokenize is a secure, personalized digital currency platform enabling users to keep track of their tokens in a seamless, user-friendly way.
 ## Problem ##
-  > Describe the problem your product solves.
-
+  Keeping track of all your digital assets in one application.
 ## Solution ##
-  > Describe how your product elegantly solves the problem.
-
+  Ease of use, aesthetically-pleasing
 ## Quote from You ##
-  > A quote from a spokesperson in your company.
-
+  'Tokenize makes managing your digital assets easy'
 ## How to Get Started ##
-  > Describe how easy it is to get started.
-
+  'Just input your assets, and it will keep track of it for you'
 ## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
-
+  'One place to view my portfolio'
 ## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
+  'Like the product? Let us know what else you would like to see'
