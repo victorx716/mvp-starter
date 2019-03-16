@@ -1,20 +1,18 @@
+require('dotenv').config()
 var express = require('express');
 var bodyParser = require('body-parser');
-// UNCOMMENT THE DATABASE YOU'D LIKE TO USE
-// var items = require('../database-mysql');
-// var items = require('../database-mongo');
+var assets = require('../database');
 
 var app = express();
 
-// UNCOMMENT FOR REACT
-// app.use(express.static(__dirname + '/../react-client/dist'));
+var port = 3000;
 
-// UNCOMMENT FOR ANGULAR
-// app.use(express.static(__dirname + '/../angular-client'));
-// app.use(express.static(__dirname + '/../node_modules'));
+app.use(express.static(__dirname + '/../client/dist'));
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
-app.get('/items', function (req, res) {
-  items.selectAll(function(err, data) {
+app.get('/assets', function (req, res) {
+  assets.selectAll(function(err, data) {
     if(err) {
       res.sendStatus(500);
     } else {
@@ -23,7 +21,7 @@ app.get('/items', function (req, res) {
   });
 });
 
-app.listen(3000, function() {
-  console.log('listening on port 3000!');
+app.listen(port, function() {
+  console.log(`Tokenize is listening at port ${port}`);
 });
 

@@ -1,34 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import $ from 'jquery';
 import List from './components/List.jsx';
+import axios from 'axios';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = { 
-      items: []
+      assets: []
     }
   }
 
   componentDidMount() {
-    $.ajax({
-      url: '/items', 
-      success: (data) => {
-        this.setState({
-          items: data
-        })
-      },
-      error: (err) => {
-        console.log('err', err);
-      }
+  axios.get('/assets')
+    .then((data) => {
+      console.log(data)
+      this.setState({
+        assets: data.data
+      })
+    })
+    .catch((err) => {
+      console.log('err', err);
     });
   }
 
   render () {
     return (<div>
-      <h1>Item List</h1>
-      <List items={this.state.items}/>
+      <h1 style={{color: 'mediumseagreen'}}>Tokenize</h1>
+      <List assets={this.state.assets}/>
     </div>)
   }
 }
