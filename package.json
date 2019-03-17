@@ -20,6 +20,7 @@
     "axios": "^0.18.0",
     "body-parser": "^1.17.2",
     "dotenv": "^7.0.0",
+    "ejs": "^2.6.1",
     "express": "^4.15.0",
     "mongoose": "^4.8.6",
     "nodemon": "^1.18.10",
