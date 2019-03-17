@@ -11,8 +11,8 @@ app.use(express.static(__dirname + '/../client/dist'));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.get('/assets', function (req, res) {
-  assets.selectAll(function(err, data) {
+app.get('/assets', (req, res) => {
+  assets.selectAll((err, data) => {
     if(err) {
       res.sendStatus(500);
     } else {

@@ -29,8 +29,8 @@ Once the project moves into development, the press release can be used as a touc
 ## Quote from You ##
   'Tokenize makes managing your digital assets easy'
 ## How to Get Started ##
-  'Just input your assets, and it will keep track of it for you'
+  'Simply input your assets, and Tokenize will keep track of it for you'
 ## Customer Quote ##
-  'One place to view my portfolio'
+  'One place to view your portfolio'
 ## Closing and Call to Action ##
   'Like the product? Let us know what else you would like to see'

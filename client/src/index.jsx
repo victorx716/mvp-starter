@@ -7,7 +7,8 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = { 
-      assets: []
+      assets: [],
+      networth: 0
     }
   }
 
@@ -16,7 +17,10 @@ class App extends React.Component {
     .then((data) => {
       console.log(data)
       this.setState({
-        assets: data.data
+        assets: data.data,
+        networth: data.data.reduce((acc, curr) => {
+          return acc + (curr.price * curr.quantity)
+        }, 0)
       })
     })
     .catch((err) => {
@@ -26,8 +30,9 @@ class App extends React.Component {
 
   render () {
     return (<div>
-      <h1 style={{color: 'mediumseagreen'}}>Tokenize</h1>
+      <h1 style={{color: '#46df98', display: 'flex', justifyContent: 'center'}}>Your Portfolio</h1>
       <List assets={this.state.assets}/>
+      <h3 style={{color: '#46df98', display: 'flex', justifyContent: 'center'}}>Net current position: {'$' + this.state.networth}</h3>
     </div>)
   }
 }
